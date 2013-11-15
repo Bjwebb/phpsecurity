@@ -167,7 +167,7 @@ It is also worth considering that it's preferable to simply discard data that we
 XML Entity Expansion
 --------------------
 
-XMl Entity Expansion is somewhat similar to XML Entity Expansion but it focuses primarily on enabling a Denial Of Service (DOS) attack by attempting to exhaust the resources of the target application's server environment. This is achieved in XML Entity Expansion by creating a custom entity definition in the XML's ``DOCTYPE`` which could, for example, generate a far larger XML structure in memory than the XML's original size would suggest thus allowing these attacks to consume memory resources essential to keeping the web server operating efficiently. This attack also applies to the XML-serialisation of HTML5 which is not currently recognised as HTML by the ``libxml2`` extension.
+XML Entity Expansion is somewhat similar to XML Entity Injection but it focuses primarily on enabling a Denial Of Service (DOS) attack by attempting to exhaust the resources of the target application's server environment. This is achieved in XML Entity Expansion by creating a custom entity definition in the XML's ``DOCTYPE`` which could, for example, generate a far larger XML structure in memory than the XML's original size would suggest thus allowing these attacks to consume memory resources essential to keeping the web server operating efficiently. This attack also applies to the XML-serialisation of HTML5 which is not currently recognised as HTML by the ``libxml2`` extension.
 
 Examples of XML Entity Expansion 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
